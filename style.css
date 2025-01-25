@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap');
+
+/* Применение шрифта Onest */
+.font-onest {
+  font-family: 'Onest', sans-serif;
+}
+
+/* Кастомный синего скроллбар */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e40af; /* Синий фон трека */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Светло-синий ползунок */
+  border-radius: 10px;
+  border: 3px solid #1e40af; /* Обрамление ползунка таким же цветом, что и трек */
+}
+
+/* Кастомные классы для блюра */
+.blurred {
+  filter: blur(4px);
+  color: #b2b2b2; /* Светло-серый цвет текста */
+  transition: filter 0.3s ease, color 0.3s ease;
+}
+
+.unblurred {
+  filter: none;
+  color: #ffffff; /* Белый цвет текста */
+  transition: filter 0.3s ease, color 0.3s ease;
+}
+
+.notification {
+  transition: opacity 0.5s ease-in-out;
+}
